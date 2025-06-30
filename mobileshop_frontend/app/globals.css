@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+.signin-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signin-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border : 1px solid #ccc;
+  padding:50px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  gap :10px;
+}
+
+body{
+  /* @apply bg-gradient-to-tr from-indigo-600 to-purple-400 */
+  @apply flex flex-1 min-h-screen
+}
+
+input{
+  @apply p-2 border border-gray-300 rounded-md
+}
+
+.btn{
+  @apply bg-blue-500 p-2 rounded-md text-white px-5 hover:bg-purple-400
+}
+
+.table{
+  @apply w-full;
+}
+.table thead{
+  @apply bg-teal-300 text-white 
+}
+
+.table thead th{
+  @apply p-3 text-left 
+}
+
+.table tbody tr{
+  @apply border-b border-gray-500 bg-gray-100
+}
+
+.table tbody td{
+  @apply p-3 text-left
+}
+
+.btn-edit{
+  @apply bg-blue-500 text-white px-3 py-2 rounded-md items-center;
+}
+
+.btn-delete{
+  @apply bg-red-500 text-white px-3 py-2 rounded-md items-center;
+}
